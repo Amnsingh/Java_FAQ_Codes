@@ -9,6 +9,26 @@ public class JP01_Swap_2_Numbers {
         a=b;
         b=t;
 
+        //Logic2- Use + & - without using third variable
+        a=a+b;
+        b=a-b;
+        a=a-b;
         System.out.println("After Swapping "+" a: "+a +" AND"+"b: "+b);
+
+        //Logic3- Use * & / without using third variable
+        a=a*b;
+        b=a/b;
+        a=a/b;
+
+        //Logic4-bitWise XOR
+        a=a^b;
+        b=a^b;
+        a=a^b;
+
+
+        //Logic 5 - Single Statement
+        b=a+b-(a=b);
+
+        System.out.println("After Swapping "+" a: "+a +" AND "+"b: "+b);
     }
 }
